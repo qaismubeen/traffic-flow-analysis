@@ -1,4 +1,4 @@
-Traffic Flow Dynamics — Multivariable Modeling and Analysis
+﻿Traffic Flow Dynamics â€” Multivariable Modeling and Analysis
 
 This project applies multivariable mathematical modeling to analyze urban traffic behavior using a 30-day dataset covering three Pakistani cities. The goal is to model traffic flow as a function of three variables, extract meaningful patterns through gradient analysis, and compute total flow capacity using numerical integration.
 
@@ -18,11 +18,11 @@ What the Code Does
 
 Maximum and minimum flow identification: Peak flow hit 3,473 vehicles per hour at 1:00 PM with moderate density and solid speeds. Minimum flow dropped to 2,371 vehicles per hour during evening rush when density spiked to 94 vehicles per km and speed fell to 25 km per hour.
 
-Gradient vector: Computed as (-33.117, 44.098, 51.639) at the reference point (10, 74, 40). This shows the direction of steepest ascent in the flow function — earlier time, higher density, higher speed.
+Gradient vector: Computed as (-33.117, 44.098, 51.639) at the reference point (10, 74, 40). This shows the direction of steepest ascent in the flow function â€” earlier time, higher density, higher speed.
 
-Steepest descent: The negative gradient (-33.117 reversed, -44.098, -51.639) maps directly onto congestion onset conditions — later time, falling density efficiency, speed collapse.
+Steepest descent: The negative gradient (-33.117 reversed, -44.098, -51.639) maps directly onto congestion onset conditions â€” later time, falling density efficiency, speed collapse.
 
-Directional derivative: Computed for a congestion scenario where density increases while speed drops simultaneously. The result of -5.332 shows flow decreasing by roughly 5.33 vehicles per hour per unit movement in that direction — a gradual early-stage congestion signal.
+Directional derivative: Computed for a congestion scenario where density increases while speed drops simultaneously. The result of -5.332 shows flow decreasing by roughly 5.33 vehicles per hour per unit movement in that direction â€” a gradual early-stage congestion signal.
 
 Triple integral: Numerically integrated F over the region t in [6,10], d in [20,80], v in [30,80] using SciPy. Result: approximately 32,788,140 vehicles total accumulated flow across that operating range.
 
@@ -38,3 +38,20 @@ Python, NumPy, Pandas, Scikit-learn, SciPy, Matplotlib
 
 To run:
 python traffic_project.py
+
+<!-- structure:start -->
+## Project structure
+
+**Stack:** Python
+
+```
+.gitignore
+graphs.png
+MV Calculus Project.pdf
+Project Report.pdf
+README.md
+traffic_dataset.csv
+traffic_project.py
+```
+<!-- structure:end -->
+
